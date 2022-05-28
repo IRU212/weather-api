@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\PostContrller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware(['middleware'=>'api'],function(){
+    Route::get('/',[YoutubeController::class,'index']);
 });
+
+Route::get('/test',[PostContrller::class,'index']);
