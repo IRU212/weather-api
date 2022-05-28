@@ -1,33 +1,55 @@
 import React from "react";
 import ReactDOM from 'react-dom';
+import styled from 'styled-components';
+import Home from "./body/Home";
+import Todo from "./body/Todo";
+import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom';
+import Wether from "./body/Wether";
 
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+
+const Back = styled.div`
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    text-align: center;
+`;
+
+const LinkFont = styled.div`
+    color: #fff;
+    text-decoration: none;
+    margin: 18px 0% 18px 0%;
+    width: 9vw;
+`;
 
 function Header(){
+
     return(
-        <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
-            <Toolbar>
-            <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                sx={{ mr: 2 }}
-            >
-                <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>ホーム</Typography>
-            <Button color="inherit">Login</Button>
-            </Toolbar>
-        </AppBar>
-        </Box>
+        <>
+            <BrowserRouter>
+                <Back>
+                    <NavLink to="/" style={{ textDecoration: 'none' }} >
+                        <LinkFont>
+                            home
+                        </LinkFont>
+                    </NavLink>
+                    <NavLink to="/todo" style={{ textDecoration: 'none' }} >
+                        <LinkFont>
+                            todo
+                        </LinkFont>
+                    </NavLink>
+                    <NavLink to="/wether" style={{ textDecoration: 'none' }} >
+                        <LinkFont>
+                            weather
+                        </LinkFont>
+                    </NavLink>
+                </Back>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/todo" element={<Todo />} />
+                    <Route path="/wether" element={<Wether />} />
+                </Routes>
+            </BrowserRouter>
+        </>
     );
 }
 

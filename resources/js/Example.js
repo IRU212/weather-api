@@ -6,12 +6,6 @@ function Example() {
     return (
         <div>
             <Header />
-            <div className='nav'>
-                <div>ホーム</div>
-                <div></div>
-                <div></div>
-                <div>アカウント</div>
-            </div>
         </div>
     );
 }
