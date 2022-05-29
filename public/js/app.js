@@ -6328,13 +6328,166 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10;
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
+
+
+
+var Body = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    font-size: 44px;\n    margin: 90px 0 40px 0;\n    padding: auto;\n"])));
+var Sub = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    font-size: 18px;\n    text-align: center;\n    margin: 30px 0 40px 0;\n"])));
+var Main = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    width: 100%;\n    text-align: center;\n"])));
+var TodoInput = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].input(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    padding: 3px;\n    margin: 5px;\n    margin-right: 2%;\n    color: #888;\n    width: 60vw;\n    border: #ddd 1px solid;\n    border-radius: 4px;\n        &:focus {outline: none;}\n"])));
+var Add = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].button(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n    padding: 3px 7px;\n    color: #888;\n    border: #ddd 1px solid;\n    border-radius: 4px;\n"])));
+var MainBody = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n    width: 80%;\n    text-align: center;\n    margin: 100px auto 100px auto;\n    border: 1.5px solid #bbb;\n    padding: 30px ;\n"])));
+var Cb = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].button(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n    padding: 3px 7px;\n    margin: 0 4px;\n    color: #888;\n    border: #ddd 1px solid;\n    border-radius: 4px;\n"])));
+var Cli = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].li(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n    display: flex;\n    padding: auto;\n    margin: auto;\n    width: 70vw;\n\n        p{\n            padding:3px 7px;\n            text-align: left;\n            width: 60vw;\n            border: 1.5px solid #ddd;\n            border-radius: 4px;\n            margin-right: 2%;\n        }\n\n        li{\n            padding: 0;\n        }\n"])));
+var Div = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n    text-align: center;\n    margin: auto;\n    padding: auto;\n    width: 80vw\n"])));
+var PM = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject10 || (_templateObject10 = _taggedTemplateLiteral(["\n    margin: 20px 0 30px 0;\n"])));
 
 function Todo() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    children: "todo"
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      incompleteTodos = _useState2[0],
+      setIncompleteTodos = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      completeTodos = _useState4[0],
+      setCompleteTodos = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+      _useState6 = _slicedToArray(_useState5, 2),
+      todoText = _useState6[0],
+      setTodoText = _useState6[1];
+
+  var onChangeTodoText = function onChangeTodoText(event) {
+    return setTodoText(event.target.value);
+  };
+
+  var onClickAdd = function onClickAdd() {
+    if (todoText === '') return;
+    var newTodos = [].concat(_toConsumableArray(incompleteTodos), [todoText]);
+    setIncompleteTodos(newTodos);
+    setTodoText('');
+  };
+
+  var onClickDelete = function onClickDelete(index) {
+    var newTodos = _toConsumableArray(incompleteTodos);
+
+    newTodos.splice(index, 1);
+    setIncompleteTodos(newTodos);
+  };
+
+  var onClickComplete = function onClickComplete(index) {
+    var newIncompleteTodos = _toConsumableArray(incompleteTodos);
+
+    newIncompleteTodos.splice(index, 1);
+    var newCompleteTodos = [].concat(_toConsumableArray(completeTodos), [incompleteTodos[index]]);
+    setIncompleteTodos(newCompleteTodos);
+    setCompleteTodos(newCompleteTodos);
+  };
+
+  var onClickBack = function onClickBack(index) {
+    var newCompleteTodos = _toConsumableArray(completeTodos);
+
+    newCompleteTodos.splice(index, 1);
+    var newIncompleteTodos = [].concat(_toConsumableArray(incompleteTodos), [completeTodos[index]]);
+    setCompleteTodos(newCompleteTodos);
+    setIncompleteTodos(newIncompleteTodos);
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(Body, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Main, {
+        children: "Task management"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Sub, {
+        children: "This is Task management."
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(MainBody, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(TodoInput, {
+          placeholder: "todo\u3092\u5165\u529B",
+          value: todoText,
+          onChange: onChangeTodoText
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Add, {
+          onClick: onClickAdd,
+          children: "\uFF0B"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PM, {
+          className: "title",
+          children: "Incomplete"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
+          children: incompleteTodos.map(function (todo, index) {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Div, {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(Cli, {
+                className: "todoList",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+                  children: todo
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Cb, {
+                  onClick: function onClick() {
+                    return onClickComplete(index);
+                  },
+                  children: "completion"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Cb, {
+                  onClick: function onClick() {
+                    return onClickDelete(index);
+                  },
+                  children: "delete"
+                })]
+              }, todo)
+            });
+          })
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "completeArea",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PM, {
+          className: "title2",
+          children: "Complete"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
+          children: completeTodos.map(function (todo, index) {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Div, {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(Cli, {
+                className: "todoList",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+                  children: todo
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Cb, {
+                  onClick: function onClick() {
+                    return onClickBack(index);
+                  },
+                  children: "back"
+                })]
+              }, todo)
+            });
+          })
+        })]
+      })]
+    })]
   });
 }
 
@@ -6396,6 +6549,7 @@ function Wether() {
       return res.json();
     }).then(function (result) {
       setDatas(result);
+      console.log(result);
     });
   }, []);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {

@@ -57,6 +57,7 @@ function Wether(){
         .then(res => res.json())
         .then(result => {
           setDatas(result);
+          console.log(result);
         });
       },[]);
 
